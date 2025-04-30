@@ -24,6 +24,7 @@ pip install dlib
 graphql
 
 face-attendance-system/
+
 ├── dataset/                   # Contains images of registered users
 ├── trained_knn_model.clf     # Saved KNN model file
 ├── take_attendance.py        # Face recognition & attendance script
