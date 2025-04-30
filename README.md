@@ -22,6 +22,7 @@ pip install dlib
 
 3. Project Structure (Recommended)
 graphql
+
 face-attendance-system/
 ├── dataset/                   # Contains images of registered users
 ├── trained_knn_model.clf     # Saved KNN model file
@@ -31,18 +32,18 @@ face-attendance-system/
 ├── train_model.py            # Script to train KNN model
 ├── requirements.txt
 
-4. Train the Face Recognition Model
+5. Train the Face Recognition Model
 Run this script to train the model using images in dataset/:
 python train_model.py
 Make sure your train_model.py uses KNN to encode faces and save the model as trained_knn_model.clf.
 
-5. Take Attendance
+6. Take Attendance
 Run this to capture faces from webcam and mark attendance:
 python take_attendance.py
 It should use the trained KNN model.
 For each recognized face, add a row to attendance.csv.
 
-6. Show Attendance in Streamlit
+7. Show Attendance in Streamlit
 Run the Streamlit app to show the attendance sheet:
 streamlit run streamlit_app.py
 
