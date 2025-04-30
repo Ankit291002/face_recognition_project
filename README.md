@@ -21,23 +21,23 @@ pip install cmake
 pip install dlib
 
 3. Project Structure (Recommended)
-graphql
+   graphql
 
-face-attendance-system/
-
-├── dataset/                   # Contains images of registered users
-
-├── trained_knn_model.clf     # Saved KNN model file
-
-├── take_attendance.py        # Face recognition & attendance script
-
-├── attendance.csv            # CSV file to store attendance
-
-├── streamlit_app.py          # Streamlit UI to display attendance
-
-├── train_model.py            # Script to train KNN model
-
-├── requirements.txt
+  face-attendance-system/
+  
+  ├── dataset/                   # Contains images of registered users
+  
+  ├── trained_knn_model.clf     # Saved KNN model file
+  
+  ├── take_attendance.py        # Face recognition & attendance script
+  
+  ├── attendance.csv            # CSV file to store attendance
+  
+  ├── streamlit_app.py          # Streamlit UI to display attendance
+  
+  ├── train_model.py            # Script to train KNN model
+  
+  ├── requirements.txt
 
 4. Train the Face Recognition Model
 Run this script to train the model using images in dataset/:
